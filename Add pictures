@@ -16,7 +16,7 @@
   />
 </body>
 
-
+/* CCS comment */
 
 <!-- Referencing a style sheet -->
     <link rel="stylesheet" href="style.css" />
