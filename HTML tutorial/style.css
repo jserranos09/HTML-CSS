@@ -8,8 +8,7 @@ html {
 
 /* changes all the bosy on the page */
 body {
-  /* makes it the whole width of the page */
-  width: 100%;
+  width: 100%; /* makes it the whole width of the page */
   height: 100%;
   margin: 0;
 }
@@ -34,8 +33,7 @@ h1 {
 /* affects size of header */
 header img {
   width: 40px;
-  /* moves the logo to the middle of the header */
-  position: relative;
+  position: relative; /* moves the logo to the middle of the header */
   left: 100px;
   top: 10px;
 }
@@ -58,16 +56,12 @@ header img {
 
 .nav-container ul li a {
   color: #000000;
-  /* so its not underline */
-  text-decoration: none;
-  /* makes it positoned in the middle */
-  position: relative;
+  text-decoration: none; /* so its not underline */
+  position: relative; /* makes it positoned in the middle */
   top: 20px;
   right: 120px;
-  /* seperates the list from eachother*/
-  margin: 0px 0px 0px 20px;
-  /* adds more space for the line under the page a little more */
-  padding: 0px 4px 6px 4px;
+  margin: 0px 0px 0px 20px; /* seperates the list from eachother*/
+  padding: 0px 4px 6px 4px; /* adds more space for the line under the page a little more */
 }
 
 /*changes the hover color of the list */
@@ -85,11 +79,9 @@ header img {
 
 /* div class name.*/
 #container-bg {
-  /* where the img is coming from */
-  background: url(img/img-bg.jpg) no-repeat center fixed;
+  background: url(img/img-bg.jpg) no-repeat center fixed; /* where the img is coming from */
   background-size: cover;
-  /* gives the paralax effect. img stay still while page moves */
-  background-attachment: fixed;
+  background-attachment: fixed; /* gives the paralax effect. img stay still while page moves */
   width: 100%;
   height: 100%;
   margin-top: -2.2%;
@@ -100,14 +92,10 @@ header img {
 }
 
 .content-wrapper {
-  /* dont want content full width. top and bottom 0 margin. since width is 80%, 
-  it takes the last 20% and splits it on each side */
-  margin: 0 auto;
-  /* the width of the content box */
-  width: 80%;
+  margin: 0 auto; /* dont want content full width. top and bottom 0 margin. since width is 80%,it takes the last 20% and splits it on each side */
+  width: 80%; /* the width of the content box */
   text-align: center;
-  /* top and position center the text in the middle of the page */
-  top: 30%;
+  top: 30%; /* top and position center the text in the middle of the page */
   position: relative;
 }
 
@@ -119,12 +107,10 @@ header img {
 
 .content-wrapper a {
   color: #ffffff;
-  /* Removes the underline */
-  text-decoration: none;
+  text-decoration: none; /* Removes the underline */
   text-transform: uppercase;
   border: 1px solid #ffffff;
-  /* top bottom = 8, left right = 16 */
-  padding: 8px 16px;
+  padding: 8px 16px; /* top bottom = 8, left right = 16 */
   font-size: 22px;
 }
 
@@ -140,6 +126,46 @@ header img {
   font-size: 40px;
   position: absolute;
   bottom: 100px;
-  /* messin with the y and x axis. makes it go to the middle of the page*/
-  transform: translate(-50%, -50%);
+  transform: translate(
+    -50%,
+    -50%
+  ); /* messin with the y and x axis. makes it go to the middle of the page*/
+}
+
+/* Grid layout CSS */
+
+/* this styles all the divs in the class (> div) */
+.grid-layout-50 > div {
+  border: 1px solid red;
+  padding: 8px;
+}
+
+.grid-layout-50 {
+  height: 500px;
+  display: grid; /* defines element as a grid contrainer.   */
+  grid-template-columns: 1fr 1fr 1fr; /* width of the boxes. can also be %. FR means fraction. 1fr = 50%. there can be as many fr as you want and it will scale on its own.  */
+  grid-gap: 1em; /* Adds space between the containers */
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.title {
+  grid-column: 1 / 3; /* the title spans the 1st - 3rd blocks */
+  grid-row: 1 / 3; /* adjust the width of the colomn*/
+}
+
+.header {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
+.sidebar {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+.content {
+}
+
+.footer {
 }
