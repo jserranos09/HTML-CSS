@@ -15,3 +15,5 @@ Add links
 
 
 ![Screenshot 2024-05-20 at 7 57 15 PM](https://github.com/jserranos09/HTML-CSS/assets/64979937/6595c4c6-6d1e-4035-824b-38c77f3481f6)
+![Screenshot 2024-05-20 at 7 58 20 PM](https://github.com/jserranos09/HTML-CSS/assets/64979937/00643df0-636e-49cb-9b4f-73119a13b535)
+
