@@ -1,0 +1,26 @@
+/* Grid layout CSS */
+
+/* this styles all the divs in the class (> div) */
+.grid-layout-50 > div {
+  border: 1px solid red;
+  padding: 8px;
+}
+
+.grid-layout-50 {
+  height: 500px;
+  display: grid; /* defines element as a grid contrainer.   */
+  grid-template-columns: 1fr 1fr 1fr; /* width of the boxes. can also be %. FR means fraction. 1fr = 50%. there can be as many fr as you want and it will scale on its own.  */
+  grid-gap: 1em; /* Adds space between the containers */
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.title {
+  grid-column: 1 / 3; /* the title spans the 1st - 3rd blocks */
+  grid-row: 1 / 3; /* adjust the width of the colomn*/
+}
+
+.header {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
