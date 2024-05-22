@@ -30,6 +30,20 @@ h1 {
   text-shadow: 2px 2px #000000;
 }
 
+h2 {
+  color: #000000;
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 30px;
+}
+
 /* affects size of header */
 header img {
   width: 40px;
@@ -132,40 +146,47 @@ header img {
   ); /* messin with the y and x axis. makes it go to the middle of the page*/
 }
 
-/* Grid layout CSS */
+/* Edits the Grid */
 
-/* this styles all the divs in the class (> div) */
-.grid-layout-50 > div {
-  border: 1px solid red;
-  padding: 8px;
+#introduction-section {
+  margin: 0 auto 0 auto;
+  padding: 80px 0px 0px 0px;
+  text-align: center;
 }
 
-.grid-layout-50 {
-  height: 500px;
-  display: grid; /* defines element as a grid contrainer.   */
-  grid-template-columns: 1fr 1fr 1fr; /* width of the boxes. can also be %. FR means fraction. 1fr = 50%. there can be as many fr as you want and it will scale on its own.  */
-  grid-gap: 1em; /* Adds space between the containers */
-  justify-items: stretch;
-  align-items: stretch;
+#grid-layout-33 {
+  display: grid; /* so the style sheet knows were working with grid */
+  grid-template-columns: 1fr 1fr 1fr; /* creates 3 boxes */
+  grid-gap: 3em;
+  width: 80%;
+  margin: auto;
 }
 
-.title {
-  grid-column: 1 / 3; /* the title spans the 1st - 3rd blocks */
-  grid-row: 1 / 3; /* adjust the width of the colomn*/
+/* edits all the divs in grid-layout-33*/
+#grid-layout-33 > div {
+  background-color: #f2f2f2;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0px 0px 20px #84cd3b;
+  margin: 80px auto 40px auto; /* 80 top, auto left/right, 40 bottom */
 }
 
-.header {
-  grid-column: 3;
-  grid-row: 1 / 3;
+#grid-layout-33 > div:hover {
+  transition: 0.25 ease-in;
+  background-color: #ffffff;
 }
 
-.sidebar {
-  grid-column: 2 / 4;
-  grid-row: 3;
+/* edits the fonts from font awesome by using their class*/
+#grid-layout-33 .fa-solid {
+  color: grey;
+  font-size: 50px;
 }
 
-.content {
+#grid-layout-33 p {
+  font-size: 16px;
+  color: gray;
 }
 
-.footer {
+#test {
+  height: 1000px;
 }
