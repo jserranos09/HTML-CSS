@@ -26,13 +26,13 @@
             <a href="index.html" class="active">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="pages/about.html">About</a>
           </li>
           <li>
-            <a href="portfolio.html">Portfolio</a>
+            <a href="pages/portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="pages/contact.html">Contact</a>
           </li>
         </ul>
       </nav>
@@ -47,7 +47,7 @@
 
       <div class="btn-down">
         <!--  #test referecnes the div ID below-->
-        <a href="#test">
+        <a href="#content-video">
           <!-- from font awesome-->
           <i class="fa-solid fa-chevron-down"></i>
         </a>
@@ -97,6 +97,112 @@
       </div>
     </div>
 
-    <div id="test"></div>
+    <div id="content-video">
+      <h2>My Video</h2>
+      <hr />
+      <!-- adding the video from videos folder. Need controls to use the video-->
+      <iframe
+        src="https://www.youtube.com/embed/RGux3OOLhSw?si=WDWN90n_fjF3EbyW"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- we want footing to be 100% width but the content to be 80%. so we do an dic CLASS inside an ID-->
+    <!--this will be 100% widdth-->
+    <footer id="grid-footer">
+      <!--this will be 80% width-->
+      <div class="content-footer">
+        <div>
+          <img src="img/logo.png" alt="logo" />
+          <h4>Juans Web Agency</h4>
+        </div>
+
+        <div>
+          <h4>Internal Links</h4>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Get in Touch</h4>
+          <ul>
+            <li>
+              <!-- target clank means when they click it will load another page-->
+              <a href="../index.html" target="_blank">Juans Web Service</a>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Reno,+NV/@39.5578147,-120.0156501,11z/data=!3m1!4b1!4m6!3m5!1s0x809940ae9292a09d:0x40c5c5ce7438f787!8m2!3d39.529919!4d-119.8142691!16zL20vMDZreDI?entry=ttu"
+                target="_blank"
+                >Where were Located</a
+              >
+            </li>
+            <li>
+              <!--lets the user make a phone call by clicking on it-->
+              <a href="tel:+15592137163" target="_blank">559.213.7163</a>
+            </li>
+            <li>
+              <!-- Sends the user to a whats app page and has message already appear with /$text after the number & = space-->
+              <a
+                href="https://wa.me/15592137163/?text=Contact%Website"
+                target="_blank"
+                >Whatsapp me</a
+              >
+            </li>
+            <li>
+              <!-- use this for user to click on an emnail you-->
+              <!-- Can add a subject to the email like this. %20 = space-->
+              <a
+                href="mailto:superjr137@gmail.com?Subject=Need%20Help"
+                target="_blank"
+                >Email Me</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Stay Connected</h4>
+          <!-- Will change to an email formet when selected-->
+          <!-- class input newsletter is there to style input box-->
+          <input
+            type="email"
+            placeholder="Enter Email"
+            class="input-newsletter"
+          />
+          <button class="submit-newsletter">
+            Sign Up <i class="fa-solid fa-caret-right"></i>
+          </button>
+          <ul class="social-footer">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

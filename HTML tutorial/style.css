@@ -27,7 +27,7 @@ p {
 h1 {
   font-size: 68px;
   color: #ffffff;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 2px 2px #045544;
 }
 
 h2 {
@@ -37,6 +37,12 @@ h2 {
 
 h3 {
   font-size: 20px;
+  text-transform: uppercase;
+}
+
+/*In the footer */
+h4 {
+  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -167,7 +173,7 @@ header img {
   background-color: #f2f2f2;
   padding: 18px;
   text-align: center;
-  box-shadow: 0px 0px 20px #84cd3b;
+  box-shadow: 0px 0px 20px #045544;
   margin: 80px auto 40px auto; /* 80 top, auto left/right, 40 bottom */
 }
 
@@ -189,4 +195,176 @@ header img {
 
 #test {
   height: 1000px;
+}
+
+/* video editing */
+#content-video {
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0px 0px 0px;
+}
+
+iframe {
+  margin: 80px 0px 0px 0px; /* adds a space between the line above it*/
+  width: 560px;
+  height: 315px;
+  box-shadow: 0px 0px 10px #045544;
+  cursor: pointer; /*changes the curser when hovering over video*/
+}
+
+/* Footer edit*/
+
+#grid-footer {
+  width: 100%;
+  box-shadow: 0px 0px 10px #045544;
+  margin: 80px 0px 0px 0px;
+}
+
+.content-footer {
+  display: grid; /* makes the footer content in grid format*/
+  grid-template-columns: 1fr 1fr 1fr 1.4fr;
+  grid-gap: 3em;
+  padding: 80px 0px; /*top and bottom 80px. L/R 0px*/
+  width: 80%;
+  margin: 0 auto; /* give it some white space*/
+}
+
+.content-footer img {
+  width: 40px;
+}
+
+.content-footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.content-footer a:hover {
+  color: #f0f0f0;
+  transition: 0.25s ease-in;
+}
+
+.content-footer ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content-footer ul li {
+  padding: 0px 0px 8px 0px;
+}
+
+.input-newsletter {
+  width: 140px;
+  height: 30px;
+  display: inline-block; /* so small devices can see it better. */
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 10px #045544;
+}
+
+.submit-newsletter {
+  width: 100px;
+  height: 35px;
+  margin: 0px 0px 0px 10px;
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 10px #045544;
+}
+
+/*social media buttons */
+
+.social-footer li {
+  display: inline; /*makes the list inline and not on top of each other */
+}
+
+.social-footer .fa-brands {
+  font-size: 28px;
+  padding: 20px 10px 0px 0px;
+}
+
+/* Portfolio */
+
+.container-portfolio {
+  width: 80%;
+  margin: 0 auto; /* auto makes it 10% to the left and right (centers it) */
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.container-portfolio h1 {
+  color: #f0f0f0;
+  margin: 0px 0px 60px 0px;
+}
+
+.container-portfolio p {
+  color: grey;
+  font-size: 22px;
+}
+
+.portfolio-items {
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3em; /*So items are not rigth next to each other */
+}
+
+.portfolio-items img {
+  width: 350px;
+}
+
+.hvrbox {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* clips the content to fix the padding box */
+  max-width: 350px; /* Needs to be the same size as the image */
+  height: auto;
+  /* The 2 below make the boxes all centered and ads space between window */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* The overlay that appears when overlaying box */
+.hvrbox .hvrbox-layer {
+  opacity: 0; /* Must do this or it wont work */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 350px;
+  background: rgba(0, 0, 0, 0.6); /* Makes it somewhat transparent */
+  color: #ffffff;
+  transition: all 0.4s ease-in-out 0s; /* All objects. 0.4s slide in  */
+}
+
+/* The actual hover effect. The transparency of an element */
+.hvrbox:hover .hvrbox-layer {
+  opacity: 1; /* The higher the number, the more bright the background */
+}
+
+.hvrbox .hvrbox-position {
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  left: 50%;
+  /* The 3 below makes the words centered in the box */
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.hvrbox h3 {
+  font-size: 12px;
+  color: #f2f2f2;
+  margin: 0;
+}
+
+.hvrbox h4 {
+  font-size: 20px;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 6px 0px 40px 0px;
 }

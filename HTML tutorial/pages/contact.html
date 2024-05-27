@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Danfo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My first Project</title>
+    <!-- script fron font awesome-->
+    <script
+      src="https://kit.fontawesome.com/f55e26d218.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="../img/logo.png" alt="logo" />
+      <nav class="nav-container">
+        <ul>
+          <li>
+            <a href="../index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="../pages/about.html">About</a>
+          </li>
+          <li>
+            <a href="../pages/portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="../pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper-contact">
+      <div>
+        <h2>Different ways to get in touch</h2>
+        <ul>
+          <li>
+            <a href="tel:+15592137163"
+              ><i class="fa-solid fa-phone"></i>+1 559.213.7163</a
+            >
+          </li>
+          <li>
+            <a href="mailto:superjr137@gmail.com"
+              ><i class="fa-solid fa-envelope"></i>superjr137@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="http://www.instagram.com/jserranos"
+              ><i class="fa-brands fa-instagram"></i>Instagram</a
+            >
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Get in Touch</h2>
+        <!-- Must be a form. Cant make a form with just html/css. Need PHP to make it work -->
+        <form action="">
+          <div class="full-fields">
+            <label for="name">Your Name *</label>
+            <!-- Need the name atribute for PHP to work. The "required" part should be in the PHP -->
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="full-fields">
+            <label for="phone">Phone Number *</label>
+            <!-- Need the name atribute for PHP to work. The "required" part should be in the PHP -->
+            <input
+              type="phone"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <div class="full-fields">
+            <label for="email">Email Address *</label>
+            <!-- Need the name atribute for PHP to work. The "required" part should be in the PHP -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <div class="textarea">
+            <label for="message">Message *</label>
+            <textarea
+              placeholder="Please enter your comments..."
+              name="message"
+            ></textarea>
+          </div>
+          <!-- Once the submit is clicked, PHP passes throuh all the fields that I created-->
+          <button class="submit-btn" type="submit"></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="grid-footer">
+      <!--this will be 80% width-->
+      <div class="content-footer">
+        <div>
+          <img src="../img/logo.png" alt="logo" />
+          <h4>Juans Web Agency</h4>
+        </div>
+
+        <div>
+          <h4>Internal Links</h4>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Get in Touch</h4>
+          <ul>
+            <li>
+              <!-- target clank means when they click it will load another page-->
+              <a href="../index.html" target="_blank">Juans Web Service</a>
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/maps/place/Reno,+NV/@39.5578147,-120.0156501,11z/data=!3m1!4b1!4m6!3m5!1s0x809940ae9292a09d:0x40c5c5ce7438f787!8m2!3d39.529919!4d-119.8142691!16zL20vMDZreDI?entry=ttu"
+                target="_blank"
+                >Where were Located</a
+              >
+            </li>
+            <li>
+              <!--lets the user make a phone call by clicking on it-->
+              <a href="tel:+15592137163" target="_blank">559.213.7163</a>
+            </li>
+            <li>
+              <!-- Sends the user to a whats app page and has message already appear with /$text after the number & = space-->
+              <a
+                href="https://wa.me/15592137163/?text=Contact%Website"
+                target="_blank"
+                >Whatsapp me</a
+              >
+            </li>
+            <li>
+              <!-- use this for user to click on an emnail you-->
+              <!-- Can add a subject to the email like this. %20 = space-->
+              <a
+                href="mailto:superjr137@gmail.com?Subject=Need%20Help"
+                target="_blank"
+                >Email Me</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Stay Connected</h4>
+          <!-- Will change to an email formet when selected-->
+          <!-- class input newsletter is there to style input box-->
+          <input
+            type="email"
+            placeholder="Enter Email"
+            class="input-newsletter"
+          />
+          <button class="submit-newsletter">
+            Sign Up <i class="fa-solid fa-caret-right"></i>
+          </button>
+          <ul class="social-footer">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
