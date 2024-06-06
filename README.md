@@ -26,3 +26,6 @@ Add links
 -----------
 
 ![Screenshot 2024-05-27 at 4 46 14 PM](https://github.com/jserranos09/HTML-CSS/assets/64979937/1c17ca1d-b1c8-4342-a98a-65b2ba723001)
+
+
+![Screenshot 2024-06-06 at 10 46 25 AM](https://github.com/jserranos09/HTML-CSS/assets/64979937/292046c1-9ba9-4d60-b99a-72970fe098a7)
